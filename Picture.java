@@ -16,14 +16,9 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle floor;
-    /**
-     * Constructor for objects of class Picture
-     */
-    public Picture()
-    {
-        // nothing to do... instance variables are automatically set to null
-    }
-
+    private Person person1;
+    private Person person2;
+    
     /**
      * Draw this picture.
      */
@@ -48,14 +43,6 @@ public class Picture
         roof.moveVertical(-60);
         roof.makeVisible();
 
-        sun = new Circle();
-        sun.changeColor("yellow");
-        sun.moveHorizontal(100);
-        sun.moveVertical(-40);
-        sun.changeSize(80);
-        sun.makeVisible();
-        
-        
         floor = new Circle();
         floor.changeSize(1000);
         floor.changeColor("green");
@@ -63,6 +50,71 @@ public class Picture
         floor.moveVertical(140);
         floor.makeVisible();
 
+                      
+        sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(100);
+        sun.moveVertical(-100);
+        sun.changeSize(80);
+        sun.makeVisible();
+        
+        
+        
+       
+    }
+    /**
+     * Constructor for objects of class Picture
+     */
+    public void moveSun()
+    {
+      
+         
+          sun.slowMoveVertical(180);
+        sun.changeColor("black");
+          floor.changeColor("black");
+          roof.changeColor("black");
+          wall.changeColor("black");
+           window.changeColor("white");
+          
+          
+        // nothing to do... instance variables are automatically set to null
+    }
+
+ /**
+     * Constructor for objects of class Picture
+     */
+    public void moveperson()
+    {
+                     
+       person1 = new Person();
+       person1.makeVisible();
+       person1.moveVertical(17);
+       person1.moveHorizontal(-170); 
+       person1.slowMoveHorizontal(50);
+        // nothing to do... instance variables are automatically set to null
+    }
+    /**
+     * Constructor for objects of class Picture
+     */
+    public void persona2()
+    {
+         
+           
+             
+       person2 = new Person();
+       person2.makeVisible();
+       person2.moveVertical(17);
+       person2.moveHorizontal(170); 
+        // nothing to do... instance variables are automatically set to null
+    }
+ /**
+     * Constructor for objects of class Picture
+     */
+    public void person2mov()
+    {
+      
+        person2.slowMoveHorizontal(-50); 
+        // nothing to do... instance variables are automatically set to null
     }
 
     /**
