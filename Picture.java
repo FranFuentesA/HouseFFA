@@ -18,7 +18,8 @@ public class Picture
     private Circle floor;
     private Person person1;
     private Person person2;
-    
+    private Person person3;
+    private Person person4;
     /**
      * Draw this picture.
      */
@@ -90,6 +91,29 @@ public class Picture
        person1.moveVertical(17);
        person1.moveHorizontal(-170); 
        person1.slowMoveHorizontal(50);
+        // nothing to do... instance variables are automatically set to null
+    }
+    /**
+     * Constructor for objects of class Picture
+     */
+    public void personas()
+    {
+         
+                       
+       person2 = new Person();
+       person2.makeVisible();
+       person2.moveVertical(17);
+       person2.moveHorizontal(170); 
+       
+       person3 = new Person();
+       person3.makeVisible();
+       person3.moveVertical(17);
+       person3.moveHorizontal(190);
+       
+       person4 = new Person();
+       person4.makeVisible();
+       person4.moveVertical(17);
+       person4.moveHorizontal(200);
         // nothing to do... instance variables are automatically set to null
     }
     /**
