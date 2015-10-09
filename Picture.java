@@ -70,7 +70,11 @@ public class Picture
       
          
           sun.slowMoveVertical(160);
-       
+       sun.changeColor("black");
+          floor.changeColor("black");
+          roof.changeColor("black");
+          wall.changeColor("black");
+           window.changeColor("white");
           
           
         // nothing to do... instance variables are automatically set to null
