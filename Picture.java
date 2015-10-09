@@ -79,7 +79,19 @@ public class Picture
           
         // nothing to do... instance variables are automatically set to null
     }
-
+/**
+     * Constructor for objects of class Picture
+     */
+    public void moveperson()
+    {
+                     
+       person1 = new Person();
+       person1.makeVisible();
+       person1.moveVertical(17);
+       person1.moveHorizontal(-170); 
+       person1.slowMoveHorizontal(50);
+        // nothing to do... instance variables are automatically set to null
+    }
     /**
      * Change this picture to black/white display
      */
