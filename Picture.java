@@ -129,7 +129,17 @@ public class Picture
             sun.changeColor("black");
         }
     }
-
+/**
+     * Constructor for objects of class Picture
+     */
+    public void moverpersonas()
+    {
+      
+        person2.slowMoveHorizontal(-50);
+        person3.slowMoveHorizontal(-50); 
+        person4.slowMoveHorizontal(-50); 
+        // nothing to do... instance variables are automatically set to null
+    }
     /**
      * Change this picture to use color display
      */
