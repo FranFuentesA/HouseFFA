@@ -69,51 +69,10 @@ public class Picture
     {
       
          
-          sun.slowMoveVertical(180);
-        sun.changeColor("black");
-          floor.changeColor("black");
-          roof.changeColor("black");
-          wall.changeColor("black");
-           window.changeColor("white");
+          sun.slowMoveVertical(160);
+       
           
           
-        // nothing to do... instance variables are automatically set to null
-    }
-
- /**
-     * Constructor for objects of class Picture
-     */
-    public void moveperson()
-    {
-                     
-       person1 = new Person();
-       person1.makeVisible();
-       person1.moveVertical(17);
-       person1.moveHorizontal(-170); 
-       person1.slowMoveHorizontal(50);
-        // nothing to do... instance variables are automatically set to null
-    }
-    /**
-     * Constructor for objects of class Picture
-     */
-    public void persona2()
-    {
-         
-           
-             
-       person2 = new Person();
-       person2.makeVisible();
-       person2.moveVertical(17);
-       person2.moveHorizontal(170); 
-        // nothing to do... instance variables are automatically set to null
-    }
- /**
-     * Constructor for objects of class Picture
-     */
-    public void person2mov()
-    {
-      
-        person2.slowMoveHorizontal(-50); 
         // nothing to do... instance variables are automatically set to null
     }
 
