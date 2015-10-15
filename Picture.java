@@ -97,9 +97,8 @@ public class Picture
      * Constructor for objects of class Picture
      */
     public void personas()
-    {
-         
-                       
+    {        
+      
        person2 = new Person();
        person2.makeVisible();
        person2.moveVertical(17);
@@ -114,9 +113,25 @@ public class Picture
        person4.makeVisible();
        person4.moveVertical(17);
        person4.moveHorizontal(200);
-        // nothing to do... instance variables are automatically set to null
+    
+   
     }
-    /**
+      /**
+     * Constructor for objects of class Picture
+     */
+    public void moverpersonas()
+    {
+      if (person2 != null)
+      {
+      
+    
+        person2.slowMoveHorizontal(-50);
+        person3.slowMoveHorizontal(-50);
+        person4.slowMoveHorizontal(-50);
+    }
+}
+
+   /**
      * Change this picture to black/white display
      */
     public void setBlackAndWhite()
@@ -129,17 +144,7 @@ public class Picture
             sun.changeColor("black");
         }
     }
-/**
-     * Constructor for objects of class Picture
-     */
-    public void moverpersonas()
-    {
-      
-        person2.slowMoveHorizontal(-50);
-        person3.slowMoveHorizontal(-50); 
-        person4.slowMoveHorizontal(-50); 
-        // nothing to do... instance variables are automatically set to null
-    }
+
     /**
      * Change this picture to use color display
      */
@@ -152,5 +157,8 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("yellow");
         }
-    }
+
+
+}
+
 }
